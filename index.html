@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Combo&family=Roboto+Mono:ital@1display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35a73668b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/dist/css/main.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="todo-top-section">
+            <h1 class="todo__header">My to-do list</h1>
+            <input type="text" placeholder="Type your task here..." class="todo__input">
+            <button class="todo__btn"><img class="todo__blob" src="/src/img/blobanimation.svg" alt="">add</button>
+        </div>
+        <div class="todo-bottom-section">
+            <h2 class="todo__heading">Task list:</h2>
+            <p class="todo__info-paragraph">No tasks here yet</p>
+            <ul class="todo__list">
+                <!-- <li class="todo__list-item">Umyć samochód
+                    <div class="todo__list-buttons">
+                        <button class="todo__list-btn todo__list-btn--accept"><i class="fa-solid fa-check"></i></button>
+                        <button class="todo__list-btn todo__list-btn--edit">edit <i
+                                class="fa-solid fa-pencil"></i></button>
+                        <button class="todo__list-btn todo__list-btn--cancel"><i class="fa-solid fa-xmark"></i></button>
+                </li>
+                <li class="todo__list-item">Posprzątać kuwetę
+                    <div class="todo__list-buttons">
+                        <button class="todo__list-btn todo__list-btn--accept"><i class="fa-solid fa-check"></i></button>
+                        <button class="todo__list-btn todo__list-btn--edit">edit <i
+                                class="fa-solid fa-pencil"></i></button>
+                        <button class="todo__list-btn todo__list-btn--cancel"><i class="fa-solid fa-xmark"></i></button>
+                </li> -->
+            </ul>
+        </div>
+    
+
+    <div class="pop-up">
+        <h3 class="edit__header">Want to change anything in here?</h3>
+        <p class="edit__info"></p>
+        <div class="edit-container">
+            <input type="text" class="edit__input" placeholder="Type in your change...">
+            <div class="todo__list-buttons">
+            <button class="todo__list-btn todo__list-btn--accept edit-accept">Accept <i class="fa-solid fa-check"></i></button>
+            <button class="todo__list-btn todo__list-btn--cancel edit-cancel">Cancel <i class="fa-solid fa-xmark"></i></button>
+        </div>
+     </div>
+    </div>
+    </div>
+</div>
+
+
+    <script src="/dist/js/main.min.js"></script>
+</body>
+
+</html>
